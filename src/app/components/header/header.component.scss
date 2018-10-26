@@ -1,0 +1,36 @@
+@import '../../styles/core.scss';
+
+$back-icon-height: 20px;
+$back-icon-width: 10px;
+
+$map-icon-height: 30px;
+$map-icon-width: 30px;
+
+.header-div {
+    color           : $color;
+    background-color: #43e895;
+    height          : 100%;
+
+    .title-div {
+        @include abs-position-blr(10px, 0, 0);
+        font-size  : 17px;
+        font-weight: bold;
+        text-align : center;
+    }
+
+    .back-icon {
+        @include abs-position-bl(10px, 10px);
+        background     : url('../../../assets/ic_webBack@2x.png') no-repeat;
+        background-size: $back-icon-width $back-icon-height;
+        height         : $back-icon-height;
+        width          : $back-icon-width;
+    }
+
+    .map-icon {
+        @include abs-position-br(6px, 10px);
+        background     : url('../../../assets/icon_map@2x.png') no-repeat;
+        background-size: $map-icon-width $map-icon-height;
+        height         : $map-icon-height;
+        width          : $map-icon-width;
+    }
+}

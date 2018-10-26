@@ -1,0 +1,37 @@
+@import '../../styles/core.scss';
+
+.restaurant-div {
+    color   : $color;
+    height  : 180px;
+    position: relative;
+
+    .restaurant-image-div {
+        @include abs-position();
+
+        img {
+            height    : 100%;
+            width     : 100%;
+            object-fit: cover;
+        }
+
+        .restaurant-overlay {
+            @include abs-position();
+            background     : url('../../../assets/cellGradientBackground@2x.png');
+            background-size: contain;
+        }
+    }
+
+    .info-div {
+        @include abs-position-bl(6px, 12px);
+
+        .name-div {
+            font-size    : 16px;
+            font-weight  : bold;
+            margin-bottom: 6px;
+        }
+
+        .category-div {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../../styles/core.scss';
+
+.map-div {
+    height: 180px;
+}
+
+.info-div {
+    @include abs-position-tlr(180px, 0, 0);
+    background-color: #34b379;
+    color           : $color;
+    height          : 60px;
+    padding         : 12px;
+
+    .name-div {
+        font-size    : 16px;
+        font-weight  : bold;
+        margin-bottom: 6px;
+    }
+
+    .category-div {
+        font-size: 12px;
+    }
+}
+
+.detail-div {
+    @include abs-position(240px, 0, 0, 0);
+    font-size: 16px;
+    padding  : 16px;
+
+    & > div {
+        margin-bottom: 26px;
+    }
+}
